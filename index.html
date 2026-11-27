@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<script>document.documentElement.classList.add('js');</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gym Las Américas · Entrenamiento en Hatillo, San José</title>
+<meta name="description" content="Gym Las Américas, gimnasio de barrio en Hatillo, San José. Sala de pesas y cardio, clases de fuerza y funcional, planes mensuales, trimestrales y anuales. Primera clase de prueba gratis. Escríbanos por WhatsApp.">
+<meta name="theme-color" content="#08182e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-900:#08182e;
+    --navy:#0d2444;
+    --navy-700:#153a63;
+    --navy-600:#1d4a7a;
+    --yellow:#ffc72c;
+    --yellow-deep:#f0ad00;
+    --yellow-soft:#fff1c8;
+    --ink:#0d1b2b;
+    --muted:#5d6d80;
+    --paper:#f6f8fb;
+    --paper-2:#eef2f7;
+    --line:#dfe6ee;
+    --white:#ffffff;
+    --radius:16px;
+    --shadow:0 26px 60px -34px rgba(8,24,46,.55);
+    --shadow-sm:0 14px 32px -22px rgba(8,24,46,.45);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    color:var(--ink);background:var(--white);line-height:1.65;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+  body.lock{overflow:hidden}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+  .wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 20px}
+  .disp{font-family:'Barlow Condensed','Inter',sans-serif;font-weight:700;line-height:1.03;letter-spacing:.005em;text-transform:uppercase}
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:.72rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--navy-600)}
+  .eyebrow::before{content:"";width:26px;height:2px;background:var(--yellow-deep);display:block}
+  .section{padding:64px 0}
+  .section-head{max-width:660px;margin-bottom:34px}
+  .section-head h2{font-size:clamp(2rem,6.2vw,3.1rem);margin:12px 0 12px;color:var(--navy-900)}
+  .section-head p{color:var(--muted);font-size:1rem}
+  .ic{display:inline-flex}
+  .ic svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;display:block}
+  .note{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:600;color:#7a5b00;background:var(--yellow-soft);border:1px solid #f3d780;border-radius:999px;padding:7px 13px}
+  .note .ic svg{width:15px;height:15px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:600;font-size:.98rem;border-radius:12px;padding:14px 22px;transition:transform .18s ease,box-shadow .18s ease,background .18s ease;border:1.5px solid transparent;text-align:center}
+  .btn svg{width:19px;height:19px;flex:0 0 auto}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-yellow{background:var(--yellow);color:var(--navy-900);box-shadow:0 14px 28px -16px rgba(240,173,0,.9)}
+  .btn-yellow:hover{background:#ffd45c}
+  .btn-navy{background:var(--navy-900);color:#fff}
+  .btn-navy:hover{background:var(--navy-700)}
+  .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+  .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+  .btn-outline{background:#fff;color:var(--navy-900);border-color:var(--line)}
+  .btn-outline:hover{border-color:var(--navy-900)}
+  .btn-block{width:100%}
+  :focus-visible{outline:3px solid var(--yellow-deep);outline-offset:3px;border-radius:6px}
+
+  /* Header */
+  header.site{position:sticky;top:0;z-index:70;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);transition:box-shadow .25s ease}
+  header.site.scrolled{box-shadow:0 10px 30px -22px rgba(8,24,46,.5)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:14px;height:66px}
+  .brand{display:flex;align-items:center;gap:10px;min-width:0}
+  .brand .mark{width:40px;height:40px;flex:0 0 40px;border-radius:11px;background:linear-gradient(150deg,var(--navy-700),var(--navy-900));display:grid;place-items:center;position:relative}
+  .brand .mark::after{content:"";position:absolute;right:-3px;bottom:-3px;width:12px;height:12px;background:var(--yellow);border-radius:4px;border:2px solid #fff}
+  .brand .mark svg{width:21px;height:21px;stroke:var(--yellow);fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+  .brand b{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.32rem;letter-spacing:.03em;text-transform:uppercase;line-height:1;color:var(--navy-900)}
+  .brand small{display:block;font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:3px;white-space:nowrap}
+  .nav-links{display:none}
+  .nav-cta{display:none}
+  .burger{width:44px;height:44px;display:grid;place-items:center;border:1px solid var(--line);border-radius:10px;background:#fff}
+  .burger span{display:block;width:19px;height:2px;background:var(--navy-900);position:relative;transition:.2s}
+  .burger span::before,.burger span::after{content:"";position:absolute;left:0;width:19px;height:2px;background:var(--navy-900);transition:.2s}
+  .burger span::before{top:-6px}.burger span::after{top:6px}
+  .burger[aria-expanded="true"] span{background:transparent}
+  .burger[aria-expanded="true"] span::before{top:0;transform:rotate(45deg)}
+  .burger[aria-expanded="true"] span::after{top:0;transform:rotate(-45deg)}
+  .mobile-menu{display:none;border-top:1px solid var(--line);background:#fff;padding:10px 20px 20px}
+  .mobile-menu.open{display:block}
+  .mobile-menu a{display:flex;align-items:center;justify-content:space-between;padding:13px 4px;border-bottom:1px solid var(--paper-2);font-weight:500;color:var(--navy-900)}
+  .mobile-menu a .ic svg{width:16px;height:16px;color:var(--muted)}
+  .mobile-menu .btn{margin-top:16px}
+
+  /* Hero */
+  .hero{position:relative;background:var(--navy-900);color:#fff;overflow:hidden}
+  .hero-media{position:absolute;inset:0;z-index:0}
+  .hero-media img{width:100%;height:100%;object-fit:cover;object-position:50% 32%}
+  .hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,24,46,.9) 0%,rgba(8,24,46,.74) 40%,rgba(8,24,46,.94) 100%)}
+  .hero-inner{position:relative;z-index:1;padding:60px 0 46px;min-height:520px;display:flex;flex-direction:column;justify-content:flex-end}
+  .hero h1{font-size:clamp(2.7rem,11vw,5.4rem);margin:16px 0 16px;color:#fff}
+  .hero h1 .hl{color:var(--yellow)}
+  .hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(255,199,44,.13);border:1px solid rgba(255,199,44,.4);color:var(--yellow);border-radius:999px;padding:6px 12px;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+  .hero-tag .dot{width:7px;height:7px;border-radius:50%;background:var(--yellow);box-shadow:0 0 0 4px rgba(255,199,44,.18)}
+  .hero p.sub{font-size:1.06rem;color:#dfe7f2;max-width:520px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:26px 0 28px}
+  .hero-actions .btn{flex:1 1 200px}
+  .hero-facts{display:grid;grid-template-columns:1fr;gap:10px;border-top:1px solid rgba(255,255,255,.16);padding-top:20px;font-size:.9rem;color:#cfdaea}
+  .hero-facts div{display:flex;align-items:center;gap:10px}
+  .hero-facts .ic svg{width:18px;height:18px;color:var(--yellow)}
+  .hero-facts b{color:#fff;font-weight:600}
+
+  /* Quick strip */
+  .quick{background:#fff;border-bottom:1px solid var(--line)}
+  .quick-grid{display:grid;grid-template-columns:1fr;gap:0}
+  .quick-item{display:flex;gap:14px;align-items:flex-start;padding:20px 0;border-bottom:1px solid var(--paper-2)}
+  .quick-item:last-child{border-bottom:0}
+  .quick-item .qi{width:40px;height:40px;flex:0 0 40px;border-radius:10px;background:var(--paper);color:var(--navy-700);display:grid;place-items:center}
+  .quick-item b{display:block;font-size:.95rem;color:var(--navy-900)}
+  .quick-item span{font-size:.84rem;color:var(--muted);display:block;line-height:1.5}
+
+  /* Planes */
+  .planes{background:var(--paper)}
+  .planes-head{display:flex;flex-wrap:wrap;gap:18px;align-items:flex-end;justify-content:space-between;margin-bottom:30px}
+  .planes-head .section-head{margin:0}
+  .plans{display:grid;grid-template-columns:1fr;gap:18px}
+  .plan{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 24px;display:flex;flex-direction:column;position:relative;box-shadow:var(--shadow-sm);min-width:0;transition:transform .25s ease,box-shadow .25s ease}
+  .plan:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .plan-name{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:1.15rem;font-weight:600;color:var(--navy-700)}
+  .plan-price{display:flex;align-items:baseline;gap:8px;margin:10px 0 2px;flex-wrap:wrap}
+  .plan-price .amount{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:3.1rem;line-height:1;color:var(--navy-900);letter-spacing:-.01em}
+  .plan-price .cur{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:1.5rem;color:var(--navy-900)}
+  .plan-price .per{font-size:.9rem;color:var(--muted);font-weight:500}
+  .plan-sub{font-size:.8rem;color:var(--muted);margin-bottom:18px}
+  .plan ul{list-style:none;display:grid;gap:10px;margin:0 0 24px;font-size:.92rem}
+  .plan li{display:flex;gap:10px;align-items:flex-start;line-height:1.45}
+  .plan li .ic{color:var(--navy-600);flex:0 0 18px;margin-top:2px}
+  .plan li .ic svg{width:17px;height:17px;stroke-width:2.2}
+  .plan .btn{margin-top:auto}
+  .plan.featured{background:linear-gradient(165deg,var(--navy-700) 0%,var(--navy-900) 100%);border-color:var(--navy-900);color:#e8eef7}
+  .plan.featured .plan-name{color:var(--yellow)}
+  .plan.featured .plan-price .amount,.plan.featured .plan-price .cur{color:#fff}
+  .plan.featured .plan-price .per,.plan.featured .plan-sub{color:#b9c7d9}
+  .plan.featured li .ic{color:var(--yellow)}
+  .plan-badge{position:absolute;top:-12px;right:20px;background:var(--yellow);color:var(--navy-900);font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:6px 11px;border-radius:999px;box-shadow:0 6px 16px -8px rgba(0,0,0,.5)}
+  .plans-foot{margin-top:22px;font-size:.86rem;color:var(--muted);display:flex;gap:10px;align-items:flex-start}
+  .plans-foot .ic{color:var(--navy-600);flex:0 0 18px;margin-top:2px}
+  .plans-foot .ic svg{width:16px;height:16px}
+
+  /* Disciplinas */
+  .disc-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .disc{position:relative;border-radius:14px;overflow:hidden;min-height:220px;display:flex;align-items:flex-end;color:#fff;isolation:isolate}
+  .disc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .6s ease}
+  .disc::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,24,46,.05) 20%,rgba(8,24,46,.9) 100%);z-index:-1}
+  .disc:hover img{transform:scale(1.05)}
+  .disc-body{padding:16px}
+  .disc-body .ic{color:var(--yellow);margin-bottom:8px}
+  .disc-body h3{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.04em;font-size:1.25rem;line-height:1;font-weight:600}
+  .disc-body p{font-size:.8rem;color:#d5dfec;margin-top:5px;line-height:1.45}
+
+  /* Horario */
+  .horario{background:var(--paper);padding-top:0}
+  .horario-panel{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow-sm);min-width:0}
+  .horario-top{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:16px}
+  .horario-top h3{font-size:1.12rem;color:var(--navy-900)}
+  .table-scroll{overflow-x:auto;min-width:0;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:12px}
+  table.horario-t{width:100%;border-collapse:collapse;min-width:600px;font-size:.86rem}
+  table.horario-t th,table.horario-t td{padding:11px 10px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
+  table.horario-t thead th{background:var(--navy-900);color:#fff;font-weight:600;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase}
+  table.horario-t thead th:first-child{text-align:left;border-top-left-radius:0}
+  table.horario-t tbody th{text-align:left;font-weight:600;color:var(--navy-700);background:var(--paper)}
+  table.horario-t tbody tr:last-child th,table.horario-t tbody tr:last-child td{border-bottom:0}
+  .tag{display:inline-block;border-radius:999px;padding:3px 9px;font-size:.72rem;font-weight:600;letter-spacing:.02em}
+  .tag-f{background:#e3edf9;color:#174a7c}
+  .tag-c{background:#fdeec9;color:#7a5600}
+  .tag-k{background:#e8f2ea;color:#24603a}
+  .tag-x{background:var(--paper-2);color:#7c8a9a}
+  .legend{display:flex;flex-wrap:wrap;gap:14px;margin-top:14px;font-size:.78rem;color:var(--muted)}
+  .legend span{display:flex;align-items:center;gap:6px}
+  .legend i{width:9px;height:9px;border-radius:3px;display:block}
+
+  /* Membresía */
+  .memb{background:var(--navy-900);color:#fff;position:relative;overflow:hidden}
+  .memb::before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(255,199,44,.14),transparent 65%);top:-220px;right:-160px}
+  .memb .eyebrow{color:var(--yellow)}
+  .memb .eyebrow::before{background:var(--yellow)}
+  .memb h2{color:#fff;font-size:clamp(2rem,6vw,3rem);margin:12px 0 12px}
+  .memb .lead{color:#c6d3e3;max-width:560px}
+  .memb-grid{display:grid;gap:24px;margin-top:34px;min-width:0}
+  .steps{display:grid;gap:2px;counter-reset:step}
+  .step{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+  .step:last-child{border-bottom:0}
+  .step .num{width:40px;height:40px;flex:0 0 40px;border-radius:11px;background:rgba(255,199,44,.14);border:1px solid rgba(255,199,44,.4);color:var(--yellow);display:grid;place-items:center;font-family:'Barlow Condensed',sans-serif;font-size:1.2rem;font-weight:700}
+  .step h3{font-size:1rem;font-weight:600;color:#fff;margin-bottom:3px;display:flex;align-items:center;gap:8px}
+  .step h3 .ic svg{width:16px;height:16px;color:var(--yellow)}
+  .step p{font-size:.88rem;color:#b8c6d8;line-height:1.55}
+  .phone{background:#0a1f3c;border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:16px;box-shadow:0 30px 60px -30px #000;max-width:380px}
+  .phone-top{display:flex;align-items:center;gap:10px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.1);margin-bottom:14px}
+  .phone-av{width:34px;height:34px;border-radius:50%;background:var(--yellow);color:var(--navy-900);display:grid;place-items:center;font-weight:700;font-size:.8rem;flex:0 0 34px}
+  .phone-top b{font-size:.84rem;display:block;line-height:1.2}
+  .phone-top span{font-size:.7rem;color:#9fb0c6}
+  .bubble{background:#17442f;border-radius:12px 12px 12px 3px;padding:12px 13px;font-size:.84rem;color:#eaf3ee;line-height:1.5}
+  .bubble b{color:#fff}
+  .bubble-time{font-size:.66rem;color:#9dbfae;text-align:right;margin-top:6px}
+  .phone-note{font-size:.72rem;color:#93a5bb;margin-top:10px;text-align:center}
+
+  /* Prueba */
+  .prueba-grid{display:grid;gap:28px;align-items:start;min-width:0}
+  .prueba h2{font-size:clamp(2rem,6vw,3rem);margin:12px 0 14px;color:var(--navy-900)}
+  .prueba .lead{color:var(--muted)}
+  .perks{list-style:none;display:grid;gap:12px;margin:22px 0 0}
+  .perks li{display:flex;gap:11px;align-items:flex-start;font-size:.94rem}
+  .perks .ic{color:var(--navy-600);flex:0 0 20px;margin-top:2px}
+  .perks .ic svg{width:19px;height:19px;stroke-width:2.2}
+  .form-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px;min-width:0}
+  .form-card h3{font-size:1.2rem;color:var(--navy-900);margin-bottom:4px}
+  .form-card .fs{font-size:.84rem;color:var(--muted);margin-bottom:18px}
+  .field{margin-bottom:14px}
+  .field label{display:block;font-size:.78rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--navy-700);margin-bottom:6px}
+  .field input,.field select{width:100%;border:1.5px solid var(--line);background:#fbfcfe;border-radius:10px;padding:12px 13px;font-size:.95rem;color:var(--ink);transition:border-color .15s ease,background .15s ease}
+  .field input:focus,.field select:focus{outline:none;border-color:var(--navy-600);background:#fff}
+  .field input::placeholder{color:#9aa8b8}
+  .field .err{display:none;font-size:.76rem;color:#b3261e;margin-top:5px;font-weight:500}
+  .field.bad input,.field.bad select{border-color:#d95b52;background:#fff6f5}
+  .field.bad .err{display:block}
+  .preview{margin-top:16px;border:1px dashed #b9c8d9;border-radius:12px;padding:14px;background:var(--paper);display:none}
+  .preview.show{display:block;animation:pop .25s ease}
+  @keyframes pop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .preview .pv-label{display:flex;align-items:center;gap:8px;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--navy-600);margin-bottom:8px}
+  .preview .pv-label .ic svg{width:14px;height:14px}
+  .preview p{font-size:.88rem;color:var(--ink);line-height:1.55;white-space:pre-line;word-break:break-word}
+  .preview .btn{margin-top:12px}
+  .form-note{font-size:.75rem;color:var(--muted);margin-top:12px;line-height:1.5;display:flex;gap:7px;align-items:flex-start}
+  .form-note .ic{flex:0 0 14px;margin-top:2px}
+  .form-note .ic svg{width:14px;height:14px;color:var(--navy-600)}
+
+  /* Entrenadores */
+  .coaches{display:grid;grid-template-columns:1fr;gap:18px}
+  .coach{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);min-width:0;transition:transform .25s ease}
+  .coach:hover{transform:translateY(-3px)}
+  .coach img{width:100%;height:290px;object-fit:cover;object-position:50% 25%}
+  .coach-body{padding:18px 20px 22px}
+  .coach-body h3{font-size:1.08rem;color:var(--navy-900)}
+  .coach-role{font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--navy-600);margin:4px 0 8px;display:block}
+  .coach-body p{font-size:.86rem;color:var(--muted);line-height:1.55}
+
+  /* Testimonios */
+  .testi{background:var(--paper-2)}
+  .testi-grid{display:grid;grid-template-columns:1fr;gap:16px}
+  .quote{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;min-width:0}
+  .quote .qmark{color:var(--yellow-deep);margin-bottom:8px}
+  .quote .qmark svg{width:28px;height:28px;fill:currentColor;stroke:none}
+  .quote p{font-size:.93rem;color:#33465c;line-height:1.6}
+  .quote footer{display:flex;align-items:center;gap:10px;margin-top:18px;padding-top:14px;border-top:1px solid var(--paper-2)}
+  .avatar{width:38px;height:38px;border-radius:50%;background:var(--navy-900);color:var(--yellow);display:grid;place-items:center;font-weight:700;font-size:.8rem;flex:0 0 38px;letter-spacing:.04em}
+  .quote footer b{display:block;font-size:.86rem;color:var(--navy-900);line-height:1.2}
+  .quote footer span{font-size:.75rem;color:var(--muted)}
+
+  /* FAQ */
+  .faq-grid{display:grid;gap:24px;min-width:0}
+  .faq-list{display:grid;gap:10px}
+  details.faq{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  details.faq[open]{border-color:#c3d4e8;box-shadow:var(--shadow-sm)}
+  details.faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:17px 18px;font-weight:600;font-size:.95rem;color:var(--navy-900)}
+  details.faq summary::-webkit-details-marker{display:none}
+  details.faq summary .plus{width:22px;height:22px;flex:0 0 22px;border-radius:50%;border:1.5px solid #c3d0de;display:grid;place-items:center;position:relative;transition:.2s}
+  details.faq summary .plus::before,details.faq summary .plus::after{content:"";position:absolute;background:var(--navy-700);border-radius:2px;transition:.2s}
+  details.faq summary .plus::before{width:10px;height:2px}
+  details.faq summary .plus::after{width:2px;height:10px}
+  details.faq[open] summary .plus{background:var(--yellow);border-color:var(--yellow)}
+  details.faq[open] summary .plus::after{transform:rotate(90deg);opacity:0}
+  details.faq .faq-a{padding:0 18px 18px;font-size:.9rem;color:var(--muted);line-height:1.65}
+  details.faq .faq-a a{color:var(--navy-600);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+  .faq-aside{background:var(--navy-900);color:#fff;border-radius:var(--radius);padding:26px;position:relative;overflow:hidden}
+  .faq-aside h3{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;font-size:1.7rem;line-height:1.05;margin-bottom:8px}
+  .faq-aside p{font-size:.88rem;color:#c2d0e0;margin-bottom:18px}
+  .faq-aside .btn{width:100%}
+
+  /* Footer */
+  footer.site{background:var(--navy-900);color:#b9c8da;padding:46px 0 26px;font-size:.88rem}
+  .foot-grid{display:grid;gap:26px}
+  .foot-brand .brand b{color:#fff}
+  .foot-brand .brand small{color:#8fa2b8}
+  .foot-brand p{margin-top:14px;max-width:320px;font-size:.84rem;color:#9fb0c6}
+  .foot-col h4{color:#fff;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:12px;font-weight:700}
+  .foot-col a,.foot-col span{display:block;padding:4px 0;color:#b9c8da}
+  .foot-col a:hover{color:var(--yellow)}
+  .foot-col .row{display:flex;gap:9px;align-items:flex-start;padding:5px 0}
+  .foot-col .row .ic{flex:0 0 16px;margin-top:3px}
+  .foot-col .row .ic svg{width:16px;height:16px;color:var(--yellow)}
+  .foot-bottom{margin-top:32px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;font-size:.76rem;color:#8699b0}
+
+  /* Floating WhatsApp */
+  .wa-float{position:fixed;right:16px;bottom:16px;z-index:80;display:inline-flex;align-items:center;gap:9px;background:#1f9d55;color:#fff;border-radius:999px;padding:12px 16px;font-weight:600;font-size:.86rem;box-shadow:0 16px 34px -14px rgba(0,0,0,.55);transition:transform .2s ease,background .2s ease}
+  .wa-float:hover{transform:translateY(-2px);background:#188a49}
+  .wa-float svg{width:22px;height:22px;fill:currentColor;stroke:none}
+
+  /* Reveal */
+  .js .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .js .reveal.in{opacity:1;transform:none}
+  .js .reveal.d1{transition-delay:.08s}.js .reveal.d2{transition-delay:.16s}.js .reveal.d3{transition-delay:.24s}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .js .reveal{opacity:1;transform:none;transition:none}
+    *{animation-duration:.001s!important;transition-duration:.001s!important}
+  }
+
+  /* Tablet */
+  @media (min-width:640px){
+    .section{padding:80px 0}
+    .hero-inner{padding:80px 0 60px;min-height:600px}
+    .hero-facts{grid-template-columns:1fr 1fr}
+    .quick-grid{grid-template-columns:1fr 1fr;column-gap:28px}
+    .quick-item{border-bottom:0;border-right:1px solid var(--paper-2);padding:22px 0}
+    .quick-item:nth-child(2n){border-right:0;padding-left:22px}
+    .quick-item:nth-child(2n+1){padding-right:18px}
+    .plans{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .plan.featured{grid-column:1/-1;order:-1}
+    .disc{min-height:260px}
+    .disc-body{padding:20px}
+    .disc-body h3{font-size:1.45rem}
+    .disc-body p{font-size:.86rem}
+    .coaches{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .testi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .foot-grid{grid-template-columns:1.4fr 1fr 1fr}
+  }
+
+  /* Desktop */
+  @media (min-width:980px){
+    .nav{height:76px}
+    .nav-links{display:flex;align-items:center;gap:28px;font-size:.9rem;font-weight:500;color:#3c4f65}
+    .nav-links a{position:relative;padding:6px 0}
+    .nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--yellow-deep);transition:width .2s ease}
+    .nav-links a:hover{color:var(--navy-900)}
+    .nav-links a:hover::after{width:100%}
+    .nav-cta{display:inline-flex}
+    .burger{display:none}
+    .mobile-menu{display:none!important}
+    .hero-inner{padding:110px 0 76px;min-height:640px;justify-content:center}
+    .hero-media::after{background:linear-gradient(90deg,rgba(8,24,46,.96) 0%,rgba(8,24,46,.88) 38%,rgba(8,24,46,.45) 70%,rgba(8,24,46,.6) 100%)}
+    .hero-inner .inner{max-width:600px}
+    .hero-actions .btn{flex:0 0 auto;min-width:190px}
+    .hero-facts{grid-template-columns:repeat(3,auto);justify-content:start;gap:28px;max-width:640px}
+    .quick-grid{grid-template-columns:repeat(4,1fr);column-gap:0}
+    .quick-item{padding:26px 26px;border-right:1px solid var(--paper-2)}
+    .quick-item:nth-child(2n){padding-left:26px}
+    .quick-item:nth-child(2n+1){padding-right:26px}
+    .quick-item:first-child{padding-left:0}
+    .quick-item:last-child{border-right:0;padding-right:0}
+    .plans{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
+    .plan.featured{grid-column:auto;order:0;transform:translateY(-8px)}
+    .plan.featured:hover{transform:translateY(-12px)}
+    .plan{padding:30px 26px}
+    .disc-grid{grid-template-columns:repeat(4,1fr);gap:16px}
+    .disc{min-height:300px}
+    .disc-body h3{font-size:1.35rem}
+    .memb-grid{grid-template-columns:1.25fr .75fr;gap:44px;align-items:center}
+    .prueba-grid{grid-template-columns:1fr 1fr;gap:48px}
+    .form-card{padding:30px}
+    .coaches{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .testi-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .faq-grid{grid-template-columns:1.5fr .5fr;gap:40px;align-items:start}
+    .faq-aside{position:sticky;top:96px}
+    .foot-grid{grid-template-columns:1.5fr 1fr 1fr 1.1fr}
+    .wa-float{right:24px;bottom:24px}
+  }
+</style>
+</head>
+<body>
+
+<header class="site" id="top">
+  <div class="wrap">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Gym Las Américas, inicio">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 9v6M7 7v10M17 7v10M20 9v6M7 12h10"/></svg>
+        </span>
+        <span>
+          <b>Gym Las Américas</b>
+          <small>Hatillo · San José</small>
+        </span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#planes">Planes</a>
+        <a href="#disciplinas">Disciplinas</a>
+        <a href="#horario">Horarios</a>
+        <a href="#membresia">Membresía</a>
+        <a href="#entrenadores">Entrenadores</a>
+        <a href="#faq">Preguntas</a>
+      </div>
+
+      <a class="btn btn-yellow nav-cta" href="https://wa.me/50688419907" data-wa="Hola, quisiera información sobre los planes de Gym Las Américas en Hatillo." target="_blank" rel="noopener">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.2-5.5A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 9.5c.4 2.6 2.6 4.7 5.2 5.1"/></svg></span>
+        Escríbanos
+      </a>
+
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+      </button>
+    </nav>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#planes">Planes <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></span></a>
+    <a href="#disciplinas">Disciplinas <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></span></a>
+    <a href="#horario">Horarios <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></span></a>
+    <a href="#membresia">Membresía <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></span></a>
+    <a href="#prueba">Prueba gratis <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></span></a>
+    <a href="#entrenadores">Entrenadores <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></span></a>
+    <a href="#faq">Preguntas frecuentes <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></svg></span></a>
+    <a class="btn btn-yellow" href="https://wa.me/50688419907" data-wa="Hola, quisiera información sobre los planes de Gym Las Américas en Hatillo." target="_blank" rel="noopener">
+      <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.2-5.5A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 9.5c.4 2.6 2.6 4.7 5.2 5.1"/></svg></span>
+      Escribir por WhatsApp
+    </a>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <!-- Portada -->
+  <section class="hero">
+    <div class="hero-media" aria-hidden="true">
+      <img src="img/hero.jpg" alt="" fetchpriority="high" width="1600" height="1000">
+    </div>
+    <div class="wrap hero-inner">
+      <div class="inner">
+        <span class="hero-tag"><span class="dot"></span> Gimnasio de barrio en Hatillo</span>
+        <h1 class="disp">Entrenamiento<br>en <span class="hl">Hatillo</span></h1>
+        <p class="sub">Sala de pesas, cardio y clases dirigidas en un ambiente cercano, sin poses ni filas para la máquina. Aquí se entrena con constancia y con alguien que le conoce por su nombre.</p>
+        <div class="hero-actions">
+          <a class="btn btn-yellow" href="#planes">
+            Ver planes
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span>
+          </a>
+          <a class="btn btn-ghost" href="https://wa.me/50688419907" data-wa="Hola, vi la página de Gym Las Américas y quisiera información para empezar a entrenar en Hatillo." target="_blank" rel="noopener">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.2-5.5A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 9.5c.4 2.6 2.6 4.7 5.2 5.1"/></svg></span>
+            Escríbanos
+          </a>
+        </div>
+        <div class="hero-facts">
+          <div><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 9v6M7 7v10M17 7v10M20 9v6M7 12h10"/></svg></span> <span><b>Pesas y cardio</b> de libre acceso</span></div>
+          <div><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span> <span><b>Clases dirigidas</b> en horario fijo</span></div>
+          <div><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-10a7 7 0 0 1 14 0c0 5.6-7 10-7 10Z"/><circle cx="12" cy="11" r="2.6"/></svg></span> <span><b>Hatillo, San José</b> · consulte la ubicación</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Franja rápida -->
+  <section class="quick" aria-label="Información rápida">
+    <div class="wrap quick-grid">
+      <div class="quick-item">
+        <span class="qi" aria-hidden="true"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span></span>
+        <span><b>Planes desde ₡22.000</b><span>Mensual, trimestral y anual (montos de ejemplo)</span></span>
+      </div>
+      <div class="quick-item">
+        <span class="qi" aria-hidden="true"><span class="ic"><svg viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="2.5"/><path d="M2.5 10h19"/></svg></span></span>
+        <span><b>Pague como le quede fácil</b><span>SINPE Móvil, efectivo o tarjeta en recepción</span></span>
+      </div>
+      <div class="quick-item">
+        <span class="qi" aria-hidden="true"><span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M8 9h8M8 13h5"/><path d="M16.5 15.5h.01"/></svg></span></span>
+        <span><b>Carné digital</b><span>Se lo enviamos por WhatsApp, con código QR</span></span>
+      </div>
+      <div class="quick-item">
+        <span class="qi" aria-hidden="true"><span class="ic"><svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M10.3 20a2 2 0 0 0 3.4 0"/></svg></span></span>
+        <span><b>Aviso antes de vencer</b><span>Le recordamos unos días antes del vencimiento</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planes -->
+  <section class="section planes" id="planes">
+    <div class="wrap">
+      <div class="planes-head">
+        <div class="section-head reveal">
+          <span class="eyebrow">Planes</span>
+          <h2 class="disp">Elija cómo quiere entrenar</h2>
+          <p>Tres formas de pagar la membresía, con acceso completo a la sala y a las clases. Sin matrícula y sin contrato de permanencia.</p>
+        </div>
+        <span class="note reveal d1">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg></span>
+          Precios de ejemplo
+        </span>
+      </div>
+
+      <div class="plans">
+        <article class="plan reveal">
+          <span class="plan-name">Mensual</span>
+          <div class="plan-price"><span class="cur">₡</span><span class="amount">22.000</span><span class="per">/ mes</span></div>
+          <p class="plan-sub">Para probar el ritmo y empezar sin compromiso largo.</p>
+          <ul>
+            <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg></span> Acceso a sala de pesas y cardio</li>
+            <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg></span> Una clase dirigida por semana</li>
+            <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg></span> Evaluación inicial y rutina básica</li>
+            <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg></span> Carné digital con QR</li>
+          </ul>
+          <a class="btn btn-outline btn-block" href="https://wa.me/50688419907" data-plan="Mensual" target="_blank" rel="noopener">Consultar el plan Mensual</a>
+        </article>
+
+        <article class="plan featured reveal d1">
+          <span class="plan-badge">Más elegido</span>
+          <span class="plan-name">Trimestral</span>
+          <div class="plan-price"><span class="cur">₡</span><span class="amount">58.000</span><span class="per">/ 3 meses</span></div>
+          <p class="plan-sub">Equivale a ₡19.334 al mes. El punto justo para ver resultados.</p>
+          <ul>
+            <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg></span> Todo lo del plan mensual</li>
+            <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg></span> Clases dirigidas ilimitadas</li>
+            <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg></span> Una sesión mensual con entrenador</li>
+            <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg></span> Congelar hasta 7 días</li>
+          </ul>
+          <a class="btn btn-yellow btn-block" href="https://wa.me/50688419907" data-plan="Trimestral" target="_blank" rel="noopener">Consultar el plan Trimestral</a>
+        </article>
+
+        <article class="plan reveal d2">
+          <span class="plan-name">Anual</span>
+          <div class="plan-price"><span class="cur">₡</span><span class="amount">198.000</span><span class="per">/ año</span></div>
+          <p class="plan-sub">Equivale a ₡16.500 al mes. Para quien ya decidió que esto es parte de su semana.</p>
+          <ul>
+            <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg></span> Todo lo del plan trimestral</li>
+            <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg></span> Dos sesiones mensuales con entrenador</li>
+            <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg></span> Plan de entrenamiento por trimestre</li>
+            <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg></span> Congelar hasta 20 días al año</li>
+          </ul>
+          <a class="btn btn-outline btn-block" href="https://wa.me/50688419907" data-plan="Anual" target="_blank" rel="noopener">Consultar el plan Anual</a>
+        </article>
+      </div>
+
+      <p class="plans-foot reveal">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span>
+        <span>Los montos son de ejemplo y sirven para mostrar la estructura de los planes. El precio vigente, las promociones y la forma de pago se confirman en recepción o por WhatsApp.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Disciplinas -->
+  <section class="section" id="disciplinas">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Disciplinas</span>
+        <h2 class="disp">Cuatro formas de moverse</h2>
+        <p>La sala está abierta para entrenar por su cuenta y cada día hay clases dirigidas incluidas en la membresía.</p>
+      </div>
+
+      <div class="disc-grid">
+        <article class="disc reveal">
+          <img src="img/disc-fuerza.jpg" alt="Persona levantando una barra con discos en la sala de pesas" width="900" height="900" loading="lazy">
+          <div class="disc-body">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 9v6M7 6v12M17 6v12M20 9v6M7 12h10"/></svg></span>
+            <h3>Fuerza</h3>
+            <p>Sentadilla, peso muerto y press con técnica corregida, en grupos pequeños.</p>
+          </div>
+        </article>
+
+        <article class="disc reveal d1">
+          <img src="img/disc-funcional.jpg" alt="Entrenamiento funcional con pesas rusas en el gimnasio" width="900" height="900" loading="lazy">
+          <div class="disc-body">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 3 5 14h5l-1 7 8-11h-5l1-7Z"/></svg></span>
+            <h3>Funcional</h3>
+            <p>Circuitos con peso corporal, cuerdas y balones para fuerza útil del día a día.</p>
+          </div>
+        </article>
+
+        <article class="disc reveal d2">
+          <img src="img/disc-cardio.jpg" alt="Persona entrenando cardio en la zona de máquinas" width="900" height="900" loading="lazy">
+          <div class="disc-body">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20.8 5.6a5 5 0 0 0-7.1 0L12 7.3l-1.7-1.7a5 5 0 1 0-7.1 7.1L12 21l8.8-8.3a5 5 0 0 0 0-7.1Z"/></svg></span>
+            <h3>Cardio</h3>
+            <p>Caminadora, elíptica y bicicleta fija, más intervalos guiados de 30 minutos.</p>
+          </div>
+        </article>
+
+        <article class="disc reveal d3">
+          <img src="img/disc-pesas.jpg" alt="Rack de mancuernas en la sala de pesas del gimnasio" width="900" height="900" loading="lazy">
+          <div class="disc-body">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 7v10M3 10v4M18 7v10M21 10v4M6 12h12"/></svg></span>
+            <h3>Pesas libres</h3>
+            <p>Mancuernas, barras y bancos para armar su propia rutina a la hora que llegue.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Horario -->
+  <section class="section horario" id="horario">
+    <div class="wrap">
+      <div class="horario-panel reveal">
+        <div class="horario-top">
+          <div>
+            <h3>Horario semanal de clases</h3>
+            <p style="font-size:.85rem;color:var(--muted);margin-top:2px">Sala de pesas y cardio disponible durante todo el horario de atención.</p>
+          </div>
+          <span class="note">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg></span>
+            Horario de ejemplo
+          </span>
+        </div>
+
+        <div class="table-scroll">
+          <table class="horario-t">
+            <caption class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Horario semanal de clases de ejemplo</caption>
+            <thead>
+              <tr>
+                <th scope="col">Hora</th>
+                <th scope="col">Lun</th>
+                <th scope="col">Mar</th>
+                <th scope="col">Mié</th>
+                <th scope="col">Jue</th>
+                <th scope="col">Vie</th>
+                <th scope="col">Sáb</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">6:00</th>
+                <td><span class="tag tag-f">Fuerza</span></td>
+                <td><span class="tag tag-k">Funcional</span></td>
+                <td><span class="tag tag-f">Fuerza</span></td>
+                <td><span class="tag tag-k">Funcional</span></td>
+                <td><span class="tag tag-f">Fuerza</span></td>
+                <td><span class="tag tag-x">Cerrado</span></td>
+              </tr>
+              <tr>
+                <th scope="row">7:00</th>
+                <td><span class="tag tag-k">Funcional</span></td>
+                <td><span class="tag tag-f">Fuerza</span></td>
+                <td><span class="tag tag-k">Funcional</span></td>
+                <td><span class="tag tag-f">Fuerza</span></td>
+                <td><span class="tag tag-k">Funcional</span></td>
+                <td><span class="tag tag-k">Funcional</span></td>
+              </tr>
+              <tr>
+                <th scope="row">9:00</th>
+                <td><span class="tag tag-c">Cardio</span></td>
+                <td><span class="tag tag-c">Cardio</span></td>
+                <td><span class="tag tag-c">Cardio</span></td>
+                <td><span class="tag tag-c">Cardio</span></td>
+                <td><span class="tag tag-c">Cardio</span></td>
+                <td><span class="tag tag-c">Cardio</span></td>
+              </tr>
+              <tr>
+                <th scope="row">17:00</th>
+                <td><span class="tag tag-f">Fuerza</span></td>
+                <td><span class="tag tag-k">Funcional</span></td>
+                <td><span class="tag tag-f">Fuerza</span></td>
+                <td><span class="tag tag-k">Funcional</span></td>
+                <td><span class="tag tag-f">Fuerza</span></td>
+                <td><span class="tag tag-x">—</span></td>
+              </tr>
+              <tr>
+                <th scope="row">18:30</th>
+                <td><span class="tag tag-k">Funcional</span></td>
+                <td><span class="tag tag-f">Fuerza</span></td>
+                <td><span class="tag tag-k">Funcional</span></td>
+                <td><span class="tag tag-f">Fuerza</span></td>
+                <td><span class="tag tag-k">Funcional</span></td>
+                <td><span class="tag tag-x">—</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="legend">
+          <span><i style="background:#174a7c"></i> Fuerza</span>
+          <span><i style="background:#7a5600"></i> Funcional</span>
+          <span><i style="background:#24603a"></i> Cardio</span>
+          <span><i style="background:#eef2f7;border:1px solid #cfd8e3"></i> Sin clase / cerrado</span>
+        </div>
+        <p style="font-size:.78rem;color:var(--muted);margin-top:12px">Horario de ejemplo para esta demostración. Confirme los turnos y la disponibilidad del día por WhatsApp antes de venir.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membresía -->
+  <section class="section memb" id="membresia">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Cómo funciona</span>
+        <h2 class="disp">Hacerse socio toma una visita</h2>
+        <p class="lead">Sin trámites largos ni letra pequeña. Llega, elige su plan, paga y empieza a entrenar el mismo día.</p>
+      </div>
+
+      <div class="memb-grid">
+        <div class="steps reveal">
+          <div class="step">
+            <span class="num">1</span>
+            <div>
+              <h3><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="3.5"/><path d="M19 8v6M16 11h6"/></svg></span> Alta en recepción</h3>
+              <p>Con su cédula y un teléfono de contacto. Se registra en unos diez minutos y se le toma una foto para el carné.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="num">2</span>
+            <div>
+              <h3><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="2.5"/><path d="M2.5 10h19M6 15h3"/></svg></span> Pago del plan</h3>
+              <p>Puede pagar con SINPE Móvil, en efectivo o con tarjeta en recepción. Si paga por SINPE, se le confirma el pago por WhatsApp.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="num">3</span>
+            <div>
+              <h3><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M8 9h8M8 13h5"/><path d="M7 17h4"/></svg></span> Carné digital</h3>
+              <p>Le llega por WhatsApp una tarjeta con su nombre, la vigencia y un código QR. No hace falta cargar el carné físico.</p>
+            </div>
+          </div>
+          <div class="step">
+            <span class="num">4</span>
+            <div>
+              <h3><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M10.3 20a2 2 0 0 0 3.4 0"/></svg></span> Recordatorio antes del vencimiento</h3>
+              <p>Siete días antes de que venza la membresía, se le envía un mensaje con la fecha y las opciones para renovar. Si no quiere renovar, simplemente no responde.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="phone reveal d1">
+          <div class="phone-top">
+            <span class="phone-av" aria-hidden="true">GLA</span>
+            <div>
+              <b>Gym Las Américas</b>
+              <span>Recordatorio de membresía · ejemplo</span>
+            </div>
+          </div>
+          <div class="bubble">
+            Hola, <b>María</b>. Su membresía trimestral vence el <b>15 de diciembre</b>. Puede renovarla con SINPE Móvil o en recepción. Si desea congelarla unos días, avísenos por aquí y se la programamos.
+            <div class="bubble-time">9:02</div>
+          </div>
+          <p class="phone-note">Mensaje de ejemplo. Así se ve el aviso que se envía antes del vencimiento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prueba gratis -->
+  <section class="section prueba" id="prueba">
+    <div class="wrap prueba-grid">
+      <div class="reveal">
+        <span class="eyebrow">Prueba gratis</span>
+        <h2 class="disp">Venga un día y conózcanos</h2>
+        <p class="lead">La primera visita es sin costo: puede usar la sala, entrar a una clase y hablar con un entrenador antes de decidir. Solo necesita ropa cómoda y agua.</p>
+        <ul class="perks">
+          <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg></span> Una clase dirigida completa, sin costo</li>
+          <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg></span> Recorrido por la sala y explicación de las máquinas</li>
+          <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg></span> Recomendación de plan según su objetivo</li>
+          <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 12.5 5 5L20 6.5"/></svg></span> Sin obligación de inscribirse ese mismo día</li>
+        </ul>
+      </div>
+
+      <div class="form-card reveal d1">
+        <h3>Reserve su clase de prueba</h3>
+        <p class="fs">Complete los datos y le preparamos el mensaje para enviar por WhatsApp.</p>
+
+        <form id="trialForm" novalidate>
+          <div class="field" id="f-nombre">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: Ana Rodríguez" autocomplete="name" required>
+            <span class="err">Escriba su nombre para el mensaje.</span>
+          </div>
+
+          <div class="field" id="f-tel">
+            <label for="tel">Teléfono</label>
+            <input type="tel" id="tel" name="tel" placeholder="Ejemplo: 8888 8888" autocomplete="tel" inputmode="tel" required>
+            <span class="err">Escriba un teléfono de al menos 8 dígitos.</span>
+          </div>
+
+          <div class="field" id="f-dia">
+            <label for="dia">Día que le gustaría venir</label>
+            <select id="dia" name="dia" required>
+              <option value="">Seleccione un día</option>
+              <option>Lunes</option>
+              <option>Martes</option>
+              <option>Miércoles</option>
+              <option>Jueves</option>
+              <option>Viernes</option>
+              <option>Sábado</option>
+              <option>Todavía no lo sé</option>
+            </select>
+            <span class="err">Seleccione un día de la lista.</span>
+          </div>
+
+          <button type="submit" class="btn btn-navy btn-block">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.2-5.5A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 9.5c.4 2.6 2.6 4.7 5.2 5.1"/></svg></span>
+            Armar mi mensaje
+          </button>
+        </form>
+
+        <div class="preview" id="preview" aria-live="polite">
+          <div class="pv-label">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.2-5.5A8.5 8.5 0 1 1 21 11.5Z"/></svg></span>
+            Mensaje listo para WhatsApp
+          </div>
+          <p id="previewText"></p>
+          <a class="btn btn-yellow btn-block" id="sendWa" href="#" target="_blank" rel="noopener">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></span>
+            Enviar por WhatsApp
+          </a>
+        </div>
+
+        <p class="form-note">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span>
+          <span>Este formulario no envía nada por sí solo ni guarda sus datos: solo arma el texto y abre WhatsApp para que usted lo revise y lo envíe.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Entrenadores -->
+  <section class="section" id="entrenadores" style="background:var(--paper)">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Entrenadores</span>
+        <h2 class="disp">Quiénes le acompañan</h2>
+        <p>Un equipo pequeño que conoce a los socios por su nombre y ajusta la rutina según lo que cada uno necesita.</p>
+      </div>
+
+      <div class="coaches">
+        <article class="coach reveal">
+          <img src="img/coach-1.jpg" alt="Entrenador de fuerza trabajando con cuerdas en la sala" width="700" height="800" loading="lazy">
+          <div class="coach-body">
+            <h3>Andrés Mora</h3>
+            <span class="coach-role">Fuerza y levantamiento</span>
+            <p>Especialista en sentadilla, peso muerto y press. Trabaja la técnica desde cero y arma rutinas de tres o cuatro días por semana.</p>
+          </div>
+        </article>
+
+        <article class="coach reveal d1">
+          <img src="img/coach-2.jpg" alt="Entrenadora de funcional entrenando en el gimnasio" width="700" height="800" loading="lazy">
+          <div class="coach-body">
+            <h3>Karla Jiménez</h3>
+            <span class="coach-role">Funcional y movilidad</span>
+            <p>Dirige los circuitos y las clases de movilidad. Su enfoque es que el cuerpo aguante el día a día sin dolores ni lesiones.</p>
+          </div>
+        </article>
+
+        <article class="coach reveal d2">
+          <img src="img/coach-3.jpg" alt="Entrenador de acondicionamiento con mancuerna en el gimnasio" width="700" height="800" loading="lazy">
+          <div class="coach-body">
+            <h3>Luis Solano</h3>
+            <span class="coach-role">Cardio y acondicionamiento</span>
+            <p>Acompaña los planes de pérdida de grasa y resistencia: intervalos, control de intensidad y seguimiento cada dos semanas.</p>
+          </div>
+        </article>
+      </div>
+      <p style="font-size:.78rem;color:var(--muted);margin-top:16px">Entrenadores y especialidades de ejemplo para esta demostración.</p>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="section testi" id="testimonios">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Testimonios</span>
+        <h2 class="disp">Lo que dicen los socios</h2>
+        <p>Comentarios de ejemplo, escritos para mostrar cómo se vería esta sección con reseñas reales.</p>
+      </div>
+
+      <div class="testi-grid">
+        <article class="quote reveal">
+          <span class="qmark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.5 5C6.5 6.4 5 9 5 12.2c0 3 1.7 5 4.2 5 2 0 3.5-1.4 3.5-3.4 0-1.9-1.3-3.3-3.1-3.3-.4 0-.8 0-1 .2.3-1.6 1.5-3 3.3-3.9L9.5 5Zm9 0C15.5 6.4 14 9 14 12.2c0 3 1.7 5 4.2 5 2 0 3.5-1.4 3.5-3.4 0-1.9-1.3-3.3-3.1-3.3-.4 0-.8 0-1 .2.3-1.6 1.5-3 3.3-3.9L18.5 5Z"/></svg></span>
+          <p>«Llevo ocho meses yendo tres veces por semana. Lo que más me gustó es que nadie lo mira a uno raro si empieza desde cero; don Andrés me corrigió la técnica desde el primer día.»</p>
+          <footer>
+            <span class="avatar" aria-hidden="true">MR</span>
+            <span><b>María R.</b><span>Hatillo · plan trimestral</span></span>
+          </footer>
+        </article>
+
+        <article class="quote reveal d1">
+          <span class="qmark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.5 5C6.5 6.4 5 9 5 12.2c0 3 1.7 5 4.2 5 2 0 3.5-1.4 3.5-3.4 0-1.9-1.3-3.3-3.1-3.3-.4 0-.8 0-1 .2.3-1.6 1.5-3 3.3-3.9L9.5 5Zm9 0C15.5 6.4 14 9 14 12.2c0 3 1.7 5 4.2 5 2 0 3.5-1.4 3.5-3.4 0-1.9-1.3-3.3-3.1-3.3-.4 0-.8 0-1 .2.3-1.6 1.5-3 3.3-3.9L18.5 5Z"/></svg></span>
+          <p>«Pago por SINPE y el carné me llega al WhatsApp el mismo día. Cuando se me venció la membresía me escribieron una semana antes, así no perdí el ritmo.»</p>
+          <footer>
+            <span class="avatar" aria-hidden="true">JA</span>
+            <span><b>José A.</b><span>San Sebastián · plan anual</span></span>
+          </footer>
+        </article>
+
+        <article class="quote reveal d2">
+          <span class="qmark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.5 5C6.5 6.4 5 9 5 12.2c0 3 1.7 5 4.2 5 2 0 3.5-1.4 3.5-3.4 0-1.9-1.3-3.3-3.1-3.3-.4 0-.8 0-1 .2.3-1.6 1.5-3 3.3-3.9L9.5 5Zm9 0C15.5 6.4 14 9 14 12.2c0 3 1.7 5 4.2 5 2 0 3.5-1.4 3.5-3.4 0-1.9-1.3-3.3-3.1-3.3-.4 0-.8 0-1 .2.3-1.6 1.5-3 3.3-3.9L18.5 5Z"/></svg></span>
+          <p>«Las clases de funcional de 6 de la mañana son lo único que me hace levantarme. Somos pocos, el entrenador le pone atención a cada uno y en 45 minutos ya terminó.»</p>
+          <footer>
+            <span class="avatar" aria-hidden="true">CP</span>
+            <span><b>Carolina P.</b><span>Zapote · plan mensual</span></span>
+          </footer>
+        </article>
+      </div>
+      <p style="font-size:.78rem;color:var(--muted);margin-top:16px">Testimonios de ejemplo. Los nombres y comentarios son ficticios.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Preguntas frecuentes</span>
+        <h2 class="disp">Antes de venir</h2>
+        <p>Las dudas que más nos llegan por WhatsApp, resueltas en dos líneas.</p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-list reveal">
+          <details class="faq" open>
+            <summary>¿Cómo me inscribo? <span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-a">Puede llegar directo a recepción en el horario de atención con su cédula y un número de teléfono, o escribirnos por <a href="https://wa.me/50688419907" data-wa="Hola, quisiera inscribirme en Gym Las Américas. ¿Qué necesito llevar?" target="_blank" rel="noopener">WhatsApp</a> para apartar el cupo. El alta toma unos diez minutos y puede entrenar el mismo día.</div>
+          </details>
+
+          <details class="faq">
+            <summary>¿Puedo congelar la membresía si me voy de viaje? <span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-a">Sí. El plan trimestral permite congelar hasta siete días y el anual hasta veinte días por año. Se avisa por WhatsApp antes de la fecha y los días se corren al final de la vigencia. El plan mensual no incluye congelamiento.</div>
+          </details>
+
+          <details class="faq">
+            <summary>¿Las clases están incluidas en el plan? <span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-a">Todas las clases del horario están incluidas. El plan mensual cubre una clase por semana; el trimestral y el anual permiten entrar a todas las clases sin límite, según el cupo de cada turno.</div>
+          </details>
+
+          <details class="faq">
+            <summary>¿Cuáles son las formas de pago? <span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-a">SINPE Móvil, efectivo y tarjeta en recepción. Si paga por SINPE, envíe el comprobante por WhatsApp y se le confirma la vigencia el mismo día. No se cobra matrícula ni cargo por inscripción.</div>
+          </details>
+
+          <details class="faq">
+            <summary>¿Cuál es el horario del gimnasio? <span class="plus" aria-hidden="true"></span></summary>
+            <div class="faq-a">Hay atención de lunes a sábado, con clases desde las 6:00 y hasta las 19:30. El horario exacto de la sala y los días feriados se consultan por WhatsApp, porque cambian según la época del año.</div>
+          </details>
+        </div>
+
+        <aside class="faq-aside reveal d1">
+          <h3>¿Le quedó otra duda?</h3>
+          <p>Escríbanos por WhatsApp. Contestamos en horario de atención y sin compromiso.</p>
+          <a class="btn btn-yellow" href="https://wa.me/50688419907" data-wa="Hola, tengo una consulta sobre Gym Las Américas en Hatillo." target="_blank" rel="noopener">
+            <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.2-5.5A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 9.5c.4 2.6 2.6 4.7 5.2 5.1"/></svg></span>
+            +506 8841 9907
+          </a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#inicio">
+          <span class="mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 9v6M7 7v10M17 7v10M20 9v6M7 12h10"/></svg>
+          </span>
+          <span>
+            <b>Gym Las Américas</b>
+            <small>Hatillo · San José</small>
+          </span>
+        </a>
+        <p>Gimnasio de barrio en Hatillo, San José. Pesas, cardio y clases dirigidas para entrenar con constancia.</p>
+      </div>
+
+      <div class="foot-col">
+        <h4>Secciones</h4>
+        <a href="#planes">Planes</a>
+        <a href="#disciplinas">Disciplinas</a>
+        <a href="#horario">Horarios</a>
+        <a href="#membresia">Membresía</a>
+        <a href="#prueba">Prueba gratis</a>
+        <a href="#faq">Preguntas frecuentes</a>
+      </div>
+
+      <div class="foot-col">
+        <h4>Contacto</h4>
+        <div class="row">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.2-5.5A8.5 8.5 0 1 1 21 11.5Z"/></svg></span>
+          <a href="https://wa.me/50688419907" data-wa="Hola, quisiera información sobre Gym Las Américas en Hatillo." target="_blank" rel="noopener">+506 8841 9907</a>
+        </div>
+        <div class="row">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-10a7 7 0 0 1 14 0c0 5.6-7 10-7 10Z"/><circle cx="12" cy="11" r="2.6"/></svg></span>
+          <span>Hatillo, San José, Costa Rica. Ubicación exacta: consulte por WhatsApp.</span>
+        </div>
+      </div>
+
+      <div class="foot-col">
+        <h4>Horario</h4>
+        <span>Lunes a sábado</span>
+        <span>Clases desde las 6:00</span>
+        <span>Horario de ejemplo: consulte</span>
+        <a class="btn btn-yellow" style="margin-top:14px" href="https://wa.me/50688419907" data-wa="Hola, ¿me puede confirmar el horario de atención de Gym Las Américas?" target="_blank" rel="noopener">Escríbanos</a>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>Demo de referencia hecho por Nocodeveloper. Los datos son de ejemplo.</span>
+      <span>© <span id="year">2026</span> Gym Las Américas</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/50688419907" data-wa="Hola, quisiera información sobre Gym Las Américas en Hatillo." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp al 8841 9907">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.4.5-.6.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.6-.9-2.2-.2-.5-.5-.4-.7-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 1.6 2.9 4.1 3.9 2.4 1 2.9.8 3.4.7.5 0 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.2-.2-.2-.5-.4ZM12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2Z"/></svg>
+  WhatsApp
+</a>
+
+<script>
+(function(){
+  'use strict';
+  var WA_NUMBER = '50688419907';
+
+  function waUrl(text){
+    return 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(text);
+  }
+
+  /* Enlaces de WhatsApp con texto precargado */
+  document.querySelectorAll('[data-wa]').forEach(function(a){
+    a.setAttribute('href', waUrl(a.getAttribute('data-wa')));
+  });
+
+  /* Botones de plan */
+  document.querySelectorAll('[data-plan]').forEach(function(a){
+    var plan = a.getAttribute('data-plan');
+    a.setAttribute('href', waUrl('Hola, me interesa el plan ' + plan + ' de Gym Las Américas (Hatillo). ¿Me puede dar el precio vigente y los requisitos para inscribirme?'));
+  });
+
+  /* Menú móvil */
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('mobileMenu');
+  if (burger && menu){
+    burger.addEventListener('click', function(){
+      var open = menu.classList.toggle('open');
+      burger.setAttribute('aria-expanded', String(open));
+      burger.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+      document.body.classList.toggle('lock', open);
+    });
+    menu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        menu.classList.remove('open');
+        burger.setAttribute('aria-expanded','false');
+        burger.setAttribute('aria-label','Abrir menú');
+        document.body.classList.remove('lock');
+      });
+    });
+  }
+
+  /* Sombra del header al desplazar */
+  var header = document.querySelector('header.site');
+  var onScroll = function(){
+    if (window.scrollY > 8) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+  };
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  /* Animaciones de entrada */
+  var items = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+    items.forEach(function(el){ io.observe(el); });
+  } else {
+    items.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* Formulario de prueba gratis -> mensaje de WhatsApp */
+  var form = document.getElementById('trialForm');
+  var preview = document.getElementById('preview');
+  var previewText = document.getElementById('previewText');
+  var sendWa = document.getElementById('sendWa');
+  var nombre = document.getElementById('nombre');
+  var tel = document.getElementById('tel');
+  var dia = document.getElementById('dia');
+
+  function setBad(id, bad){
+    document.getElementById(id).classList.toggle('bad', bad);
+  }
+
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var name = nombre.value.trim();
+    var phone = tel.value.trim();
+    var day = dia.value;
+    var digits = phone.replace(/\D/g,'');
+
+    var badName = name.length < 3;
+    var badTel = digits.length < 8;
+    var badDay = !day;
+
+    setBad('f-nombre', badName);
+    setBad('f-tel', badTel);
+    setBad('f-dia', badDay);
+
+    if (badName || badTel || badDay){
+      var first = badName ? nombre : (badTel ? tel : dia);
+      if (first) first.focus();
+      preview.classList.remove('show');
+      return;
+    }
+
+    var dayPart = (day === 'Todavía no lo sé')
+      ? 'Todavía no tengo claro el día, ¿me puede recomendar uno?'
+      : 'Me gustaría ir el ' + day.toLowerCase() + '.';
+    var msg = 'Hola, soy ' + name + '. Quiero reservar la clase de prueba gratis en Gym Las Américas (Hatillo).\n'
+      + 'Mi teléfono es ' + phone + '.\n'
+      + dayPart + '\n'
+      + '¿Me confirma el horario disponible?';
+
+    previewText.textContent = msg;
+    sendWa.setAttribute('href', waUrl(msg));
+    preview.classList.add('show');
+    preview.scrollIntoView({behavior:'smooth', block:'center'});
+  });
+
+  /* Limpiar error al escribir */
+  ['f-nombre','f-tel','f-dia'].forEach(function(id){
+    var box = document.getElementById(id);
+    var ctrl = box.querySelector('input, select');
+    ctrl.addEventListener('input', function(){ box.classList.remove('bad'); });
+    ctrl.addEventListener('change', function(){ box.classList.remove('bad'); });
+  });
+
+  /* Año del pie */
+  var y = document.getElementById('year');
+  if (y) y.textContent = String(new Date().getFullYear());
+})();
+</script>
+</body>
+</html>
